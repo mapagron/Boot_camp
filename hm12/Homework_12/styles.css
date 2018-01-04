@@ -1,0 +1,89 @@
+.container-fluid {
+  background: #e9ece5;
+  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-color: #1d2120;
+  
+}
+
+.navbar {
+  padding: 5px;
+  background: #transparent;
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 3px;
+}
+
+/* Getting rid of the default link styles here */
+.navbar li {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Styling the header, giving it a height, a background color, and some top padding */
+.header {
+  height: 150px;
+  padding-top: 10px;
+  background: #97743a;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  font color: "#300032";
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+
+
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 40px;
+  margin: 0;
+  color: ##300032;
+  text-align: center;
+}
+
+/* Giving the .post element margin on 3 sides */
+.post {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.yellow {
+  background: #f2b632;
+  min-height: 50px;
+  padding: 5px;
+  margin: 5px;
+  font-weight: 900;
+}
+
+.black {
+  
+  background: transparent;
+  min-height: 50px;
+  padding: 5px;
+  margin: 5px;
+  font-weight: 900;
+  
+}
+
+.footer {
+ background: #e3e0cf;
+ padding: 3px;
+}

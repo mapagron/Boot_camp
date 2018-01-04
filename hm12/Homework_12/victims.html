@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Index4</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <link rel="stylesheet" href="stylesv3.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Visualizations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div id="container" style="height: 400px;"></div>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript">
+
+        // HighCharts code goes here
+          $(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+                    text: 'Civilian Victims of the Colombian Conflict'        
+        },
+         subtitle: {
+            text: 'Source: National Department of Statistics - Colombia'
+        },
+        xAxis: {
+            categories: [
+                '2000',
+                '2001',
+                '2002',
+                '2003',
+                '2004',
+                '2005',
+                '2006',
+                '2007',
+                '2008',
+                '2009',
+                '2010',
+                '2011',
+                '2012',
+                '2013',
+                '2014',
+                '2015'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Victims (vm)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            
+            name: 'Andes',
+            color:  '#c47f21',
+            data: [103692, 111975, 143829, 77616, 89500, 103105, 108872, 143589, 320583, 230389, 187711, 159520, 229887, 259876, 257277, 125711 ]
+
+        }, {
+            name: 'Caribe',
+            color:  '#33a02c',
+            data: [135107, 179318, 182251, 77490, 79116, 87350, 100340, 93724, 215293, 157070, 120678, 141308, 180735, 264015, 246061, 112880]       
+      
+        }, {
+            name: 'Pacifica',
+            color:  '#776cbe',
+            data: [43941, 80573, 84528, 52046, 35967, 50496, 69132, 100424, 139540, 107445, 71988, 83676, 147372, 185576, 193657, 76978 ]
+
+            
+        }, {
+            name: 'Orinoquia',
+            color:  '#981a8e',
+            data: [35524, 48502, 78640, 47149, 41356, 51524, 54955, 56947, 105918, 76542, 43907, 41102, 68370, 86308, 84498, 42030]
+
+        }, {
+            name: 'Bogota',
+            data: [7106, 18040, 34605, 23411, 23889, 31256, 3996, 49700, 79662, 57320, 30799, 35092, 38190, 45776, 52704, 24733]
+            
+        }, {
+            name: 'Amazonia',
+            data: [9535, 14288, 26942, 23581, 22146, 22585, 23202, 26100, 50670, 29785, 21789, 14083, 30639, 33799, 30049, 15160]
+        }]
+    });
+});
+ </script>
+</body>
+ <p style="width: 500px;">
+
+      <p style="font-family:courier; color:purple">Colombia is administratively divided into the capital and five regions: "Andes, Caribe, Orinoquia, Pacifica, and Amazonia".
+      In 2008, when negotiations for peace between the Colombian government and the FARC fell apart, the number of civilian victims in the Andes and Caribe regions increased more than twofold.</p>
+</p> 
+
+</body>
+</html>
+
+</html>
