@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dinamic Table</title><!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+    .section { padding: 1em 0; }
+    /* An "em" is equal to the height of a line of text. */
+    .header {
+      background: linear-gradient(to bottom, #337ab7 0%, #135a97 100%);
+      color: white;
+      padding: 1em 0 2em;
+    }
+    #data-table td {
+      width: 14%;
+      /* The table has four columns, so this rule makes them of equal width. */
+    }
+    .bar {
+      height: 20px;
+      /* Note that we'll set the width dynamically using Javascript. */
+      background: #337ab7;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header section">
+  <div class="container">
+    <h1> Extra-terrestrial menace</h1>
+    <p>Collection of Events</p>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <input type="text" class="form-control" id="date" placeholder="date">
+            <a id="date" class="btn btn-default">Date</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <input type="text" class="form-control" id="state" placeholder="State">
+          <a id="search" class="btn btn-default">Search</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Datetime</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Coutry</th>
+              <th>Shape</th>
+              <th>DurationMinutes</th>
+              <th>Comments</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+
+<script src="data.js" type="text/javascript"></script>
+<script src="index.js" type="text/javascript"></script>
+
+</body>
+</html>
+
+
