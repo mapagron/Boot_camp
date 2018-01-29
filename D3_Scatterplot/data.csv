@@ -1,0 +1,53 @@
+Year,Locationabbr,Locationdesc,Class,Topic,Question,Response,Break_Out,Break_Out_Category,Sample_Size,Data_value,Income,Confidence_limit_Low,Margin Of Error
+2014,AL,Alabama,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,887",40.1,44758.00,38.5,+/- $314
+2014,AK,Alaska,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,385",56.7,74444.00,54.6,+/- $809
+2014,AZ,Arizona,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"7,093",51.7,51340.00,50.3,+/- $231
+2014,AR,Arkansas,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"1,645",39.9,42336.00,37.7,+/- $234
+2014,CA,California,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,206",53.6,63783.00,52.1,+/- $188
+2014,CO,Colorado,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"7,260",61.2,62520.00,60.1,+/- $287
+2014,CT,Connecticut,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,618",60.8,71755.00,59.2,+/- $473
+2014,DE,Delaware,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,068",52.9,61017.00,50.7,+/- $723
+2014,DC,District of Columbia,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,343",67.4,72935.00,64.9,"+/- $1,164"
+2014,FL,Florida,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,966",54.4,48900.00,53,+/- $200
+2014,GA,Georgia,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,589",48.1,51037.00,46.4,+/- $182
+2014,HI,Hawaii,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,533",51,71977.00,49.3,+/- $663
+2014,ID,Idaho,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,307",48.5,49174.00,46.6,+/- $425
+2014,IL,Illinois,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,818",57.2,59196.00,55.4,+/- $236
+2014,IN,Indiana,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,877",47.9,50433.00,46.6,+/- $195
+2014,IA,Iowa,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,205",58.7,54570.00,57.3,+/- $300
+2014,KS,Kansas,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"6,447",51.5,53571.00,50.4,+/- $305
+2014,KY,Kentucky,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,094",37.2,44811.00,35.6,+/- $312
+2014,LA,Louisiana,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,960",49.4,45652.00,47.9,+/- $316
+2014,ME,Maine,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"5,010",59.2,50826.00,57.8,+/- $425
+2014,MD,Maryland,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"6,217",53.3,76067.00,51.6,+/- $423
+2014,MA,Massachusetts,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"8,671",61.9,70954.00,60.6,+/- $343
+2014,MI,Michigan,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,588",57,50803.00,55.6,+/- $162
+2014,MN,Minnesota,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"9,796",61.7,63217.00,60.8,+/- $225
+2014,MS,Mississippi,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"1,303",38.8,40528.00,36.7,+/- $258
+2014,MO,Missouri,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,757",45.5,49593.00,43.8,+/- $259
+2014,MT,Montana,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,920",59.6,48380.00,57.9,+/- $532
+2014,NE,Nebraska,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"12,053",59.2,54384.00,58.2,+/- $314
+2014,NV,Nevada,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"1,945",50.6,53094.00,48,+/- $378
+2014,NH,New Hampshire,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,492",62.5,68485.00,60.7,+/- $579
+2014,NJ,New Jersey,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"6,911",56.3,73702.00,54.9,+/- $377
+2014,NM,New Mexico,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,730",47.8,45674.00,46.1,+/- $350
+2014,NY,New York,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,548",54.5,60741.00,52.9,+/- $209
+2014,NC,North Carolina,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,991",46.2,48256.00,44.7,+/- $229
+2014,ND,North Dakota,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,264",61.2,59114.00,59.4,+/- $853
+2014,OH,Ohio,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,906",53.1,50674.00,51.6,+/- $157
+2014,OK,Oklahoma,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,016",41.7,48038.00,40.3,+/- $247
+2014,OR,Oregon,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,925",59,53270.00,57.2,+/- $327
+2014,PA,Pennsylvania,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"5,413",54.6,54895.00,53.2,+/- $185
+2014,RI,Rhode Island,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,745",63.2,58387.00,61.5,+/- $712
+2014,SC,South Carolina,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,647",47.3,46898.00,46,+/- $307
+2014,SD,South Dakota,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,796",55.6,52078.00,53.5,+/- $508
+2014,TN,Tennessee,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"1,670",40.5,46574.00,38.5,+/- $206
+2014,TX,Texas,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"6,735",48,54727.00,46.6,+/- $165
+2014,UT,Utah,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,030",29.8,62518.00,28.9,+/- $349
+2014,VT,Vermont,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"3,955",64.3,56104.00,62.8,+/- $793
+2014,VA,Virginia,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,491",51.7,66149.00,50.3,+/- $285
+2014,WA,Washington,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"5,824",59.5,62848.00,58.1,+/- $343
+2014,WV,West Virginia,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"1,905",32.7,42644.00,31.3,+/- $410
+2014,WI,Wisconsin,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"4,229",63.1,54610.00,61.4,+/- $201
+2014,WY,Wyoming,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"2,832",51.7,59143.00,49.5,+/- $896
+2014,PR,Puerto Rico,Alcohol Consumption,Alcohol Consumption,Adults who have had at least one drink of alcohol within the past 30 days,Yes,Overall,Overall,"1,467",29.3,19606.00,27.7,+/- $168
