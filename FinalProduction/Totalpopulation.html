@@ -1,0 +1,196 @@
+<html>
+        <html lang="en">
+    <head>
+    <!-- Styles 
+        <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        
+    </head>
+    
+      
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="#overview.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+            
+                    <li class="nav-item dropdown">
+                        
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#vis2.html">Total Population</a>
+                        <a class="dropdown-item" href="#">Map</a>
+                        
+                        </div>
+                          
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Data</a>
+                        </li>       
+                        
+                    </li>
+                    </ul>
+                </div>
+        </nav>
+
+        <div>
+            <!-- Start of container -->
+    <div class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <article class="description-content">
+              <h1 class="description-header">Homeless Characteristics </h1>
+              <hr class="description-hr"/>
+              
+              <p>There is no significant relationship between high income states and homeless population. For example, Florida average income is below the national level and yet has a significant homeless population; while California</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+        </div>
+        
+        <button id="allStates" type="button" class="btn btn-secondary">National</button>
+        <button id="Alcohol" type="button" class="btn btn-secondary">High Income States</button>
+                
+            <div id="chart"></div>
+        
+            <!-- D3 -->
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+        <script>
+        
+        (function() {
+
+            var width = 600;
+            var height = 500;
+
+            var svg = d3.select("#chart")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(0,0)")
+            
+            // Borders to the SVG
+            var svgBorder = svg.append("rect")
+                .attr("x", 0)
+                .attr("y", 0)
+                .attr("height", height)
+                .attr("width", width)
+                .style("stroke", "black")
+                .style("fill", "black");
+            
+            // scale for circles = domain (min-max of the values; range :: min and max of the bubbles size)
+            var radius = d3.scaleSqrt().domain([9000, 1500000]).range([10,50])
+
+            // variables for the forces X,Y, and collide
+            var forceXzero = d3.forceX(width/2).strength(0.05)
+            
+            var forceX = d3.forceX(function(d) {
+                    if(d.yesheavydrink > 5.8) {
+                        // return console.log(d.yesheavydrink)
+                        return 150
+                    } else {
+                        return 500
+                    }
+                }).strength(0.06)
+
+            var forceY = d3.forceY(height/2).strength(0.05)
+
+            var notCollide = d3.forceCollide(function(d) {
+                    return radius(d.homelessspoptest);
+                })
+
+            // simulation besed on the column "averageincome"
+            var simulation = d3.forceSimulation()
+                .force("forcex", forceX)
+                .force("forcey", forceY)
+                // to not have the circles on top of each other; usually the collide value is the same as the circle radious 
+                .force("notcollide", notCollide)
+
+            d3.queue()
+                .defer(d3.csv, "homelesstest.csv")
+                .await(ready)
+
+            function ready (error, datavalues) {
+                var circles = svg.selectAll(".Locationdesc")
+                .data(datavalues)
+                .enter().append("circle")
+                .attr("class", "state")
+                .attr("r", function(d) {
+                    return radius(d.homelessspoptest);
+                })
+                .attr("fill", "green")
+                .attr("text", function(d) {
+                    return (d.id)
+                })
+                //.padding(5)
+                //.attr("cx", 100)
+                //.attr("cy", 300)
+
+                // defining text elements for the circles
+                var circletext = svg.selectAll(null)
+                .data(datavalues)
+                .enter()
+                .append('text')
+                .text(d => d.id)
+                //.text("text", function(d) {
+                  // return (d.id)
+                //})
+                .attr("color", "black")
+                .attr('font-size', 8)
+
+                d3.select("#allStates").on('click', function() {
+                    simulation.force("forcex", forceXzero)
+                    .alphaTarget(0.5) 
+                    .restart()
+                })
+
+                d3.select("#Alcohol").on('click', function() {
+                    simulation.force("forcex", forceX)
+                    //.append('Alcohol compsuptin os not related to....')
+                    .alphaTarget(0.25) 
+                    .restart()
+                })                 
+
+                simulation.nodes(datavalues)
+                    .on('tick', ticked)
+
+                function ticked() {
+                    circles
+                        .attr("cx", function(d) {
+                            return d.x
+                        })
+                    
+                        .attr("cy", function(d) {
+                            return d.y
+                        })
+
+                        circletext
+                        .attr('x', function(d) {
+                            return d.x
+                        })
+                        .attr("y", function(d) {
+                            return d.y
+                        })
+                }
+            }     
+        
+        })();  
+         
+      
+        
+        
+        </script>
+    </body>
+    
+</html>
